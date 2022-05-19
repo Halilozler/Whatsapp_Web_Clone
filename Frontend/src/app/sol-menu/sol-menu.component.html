@@ -1,0 +1,20 @@
+<div id="main_kisi" class="sınıf">
+    <div class="bosluk">
+        
+    </div>
+    <div *ngFor="let p of kisiler"> 
+        <div class="kisi" (click)="getir(p.kisi_id)">
+            <div class="div_resim">
+                <img class="resim" src="assets/img/user_icon.png" alt="">
+            </div>
+            <div class="div_isim_sonSohbet">
+                <h5>{{ p.ad }} {{ p.soyad }} </h5>
+                <p *ngIf="p.gonderdinmi">> {{ p.sonMesaj }}</p>
+                <p *ngIf="!p.gonderdinmi">{{ p.sonMesaj }}</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</div>

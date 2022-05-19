@@ -1,0 +1,194 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #293556;
+}
+#main{
+    height: 43em;
+    width: 88em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clear{
+    overflow:auto;
+}
+
+.sınıf{
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+
+.cikis{
+    position: fixed;
+    background-color: rgb(57, 17, 17);
+    border-radius: 20px;
+    width: 50px;
+    height: 30px;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    color: white;
+}
+
+#main_kisi{
+    background-color: #2E4583;
+    width: 30%;
+}
+#main_sohbet{
+    background-color: #3E60C1;
+    width: 70%;
+    height: 99%;
+}
+
+.yesil{
+    height: 100%;
+    background-color: #5983FC;
+}
+
+.kisi{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid;
+    border-color: #171f33;
+}
+
+.div_resim{
+    height: 100%;
+    width: 70px;
+    /*
+    background-image: url("img/user_icon.png");
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    display: inline-block;
+    
+}
+
+.resim{
+    height: 85%;
+    padding-left: 7px;
+    padding-top: 4px;
+}
+
+.bosluk{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid;
+    border-color: #171f33;
+}
+
+.yazı_kisi{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid black;
+}
+
+.yazı_kisi_resim{
+    width: 66px;
+}
+
+.yazı_kisi_{
+    display: inline-block;
+}
+
+.yazı_kisi_ad{
+    display: inline-block;
+    font-size: x-large;
+    padding-left: 20px;
+    width: calc(100% - 90px);
+    height: 100%;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.user_resim{
+    height: 51px;
+    padding: 5px 5px 5px 10px;
+}
+
+.div_isim_sonSohbet{
+    margin: 0;
+    height: 100%;
+    display: inline-block;
+    width: calc(100% - 75px);
+    margin-left: 1px;
+    vertical-align: top;
+}
+
+
+h5,p{
+    margin: 0;
+}
+
+.div_isim_sonSohbet h5{
+    font-size: large;
+    padding-top: 11px;
+}
+
+.kisi:hover{
+    background-color: #171f33;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#gorunursohbet{
+    width: 100%;
+    height: calc(93% - 62px);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#sohbet{
+    width: 100%;
+    height: 7%;
+    border-top: #171f33 solid 2px;
+}
+
+.sohbet_kutu{
+    border-radius: 5px;
+    width: 90%;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 12px;
+}
+.sohbet_button{
+    border-radius: 5px;
+    height: 30px;
+}
+
+.mesaj{
+    background-color: black;
+    color: white;
+    clear: both;
+    padding: 10px 5px 0px 5px;
+    border: white 1px solid;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+.mesaj p{
+    padding: 0;
+}
+
+.giden_mesaj{
+    float: right;
+    margin-right: 20px;
+}
+.gelen_mesaj{
+    float: left;
+    margin-left: 20px;
+}
+.saat{
+    font-size: 12px;
+    float: right;
+}
+.yazi{
+    padding-right: 40px;
+}
+

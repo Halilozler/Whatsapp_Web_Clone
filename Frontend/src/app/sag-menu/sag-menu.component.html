@@ -1,0 +1,49 @@
+<div id="main_sohbet" class="sınıf" *ngIf="varmi">
+    <div class="yazı_kisi">
+        <div class="yazı_kisi_resim yazı_kisi_">
+            <img src="assets/img/user_icon.png" class="user_resim" alt="">
+        </div>
+        
+        <div class="yazı_kisi_ad yazı_kisi_">
+            <h5>{{Karsi_kisi.ad}}  {{Karsi_kisi.soyad}}</h5>
+        </div>
+    </div>
+
+    <div id="gorunursohbet" >
+        <div *ngFor="let item of Mesajlar">
+            <div class="gelen_mesaj mesaj" *ngIf="!item.gonderdi" >
+                <div class="yazi">
+                    <p>{{item.mesaj}}</p>
+                </div>
+                <div class="saat">
+                    {{item.saat}}
+                </div>
+            </div>
+            
+            <div class="giden_mesaj mesaj" *ngIf="item.gonderdi">
+                <div class="yazi">
+                    <p>{{item.mesaj}}</p>
+                </div>
+                <div class="saat">
+                    {{item.saat}}
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="sohbet">
+        <form #form="ngForm" (ngSubmit)="yaz()">
+            <input class="sohbet_kutu" type="text" placeholder="Bir Mesaj Yazın" name="mesaj" [(ngModel)]="mesaj">
+            <button class="sohbet_button" type="submit">
+                Gönder
+            </button>
+        </form>
+        
+    </div>
+</div>
+
+<div id="main_sohbet" class="sınıf" *ngIf="!varmi">
+    mesaj Yok
+</div>
+
